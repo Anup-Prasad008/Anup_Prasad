@@ -104,3 +104,22 @@ footer {
   background: #000;
   opacity: 0.6;
   }
+
+/* Normal button */
+#glowBtn {
+  padding: 12px 25px;
+  font-size: 16px;
+  background: #ff1a1a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Animation on click */
+#glowBtn.active {
+  box-shadow: 0 0 10px #ff1a1a,
+              0 0 20px #ff1a1a,
+              0 0 40px #ff1a1a;
+  transform: scale(1.2);
+}
