@@ -149,3 +149,80 @@ footer {
     display: block;   /* mobile me bhi allow */
   }
 }
+
+/* HEADER */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+.menu-icon {
+  font-size: 26px;
+  cursor: pointer;
+  color: red;
+}
+
+/* RIGHT MENU */
+.nav-links a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.nav-links a:hover {
+  color: red;
+}
+
+/* MOBILE MENU */
+.mobile-menu {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background: black;
+  display: none;
+  flex-direction: column;
+  z-index: 999;
+  animation: slideDown 0.3s ease;
+}
+
+.mobile-menu a {
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid #222;
+}
+
+.mobile-menu a:hover {
+  background: red;
+}
+
+/* SECTIONS */
+.section {
+  height: 100vh;
+  padding-top: 80px;
+  text-align: center;
+  font-size: 30px;
+}
+
+/* ANIMATION */
+@keyframes slideDown {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+}
