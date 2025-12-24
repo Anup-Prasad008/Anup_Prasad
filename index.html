@@ -2,102 +2,106 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Anup Prasad| GitHub Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Anup Prasad | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline id="bgVideo">
+    <source src="210824_medium.mp4" type="video/mp4">
+  </video>
+
+  <!-- Overlay -->
+  <div class="overlay"></div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#profile">Profile</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <!-- SLIDE MENU (Mobile) -->
+  <div class="slide-menu" id="slideMenu">
+    <a href="#home" onclick="closeMenu()">Home</a>
+    <a href="#projects" onclick="closeMenu()">Projects</a>
+    <a href="#profile" onclick="closeMenu()">Profile</a>
+    <a href="#about" onclick="closeMenu()">About</a>
+  </div>
+
+  <!-- HOME -->
+  <section class="hero section" id="home">
     <h1>Hi, I'm <span>Anup Prasad</span></h1>
-    <p>Developer • Open Source Enthusiast • GitHub Explorer</p>
+    <p>Ethical Hacker • Python Developer • GitHub Projects</p>
 
-    <div class="buttons">
-      <button onclick="scrollToSection('projects')">View Projects</button>
-      <a href="https://github.com/AloneHacker-008" target="_blank">
-        <button class="outline">GitHub Profile</button>
-      </a>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section class="about">
-    <h2>About Me</h2>
-    <p>
-      I am a passionate developer who loves building projects,
-      learning new technologies, and contributing to open-source.
-      This website shows my latest GitHub work and progress.
-    </p>
+    <button id="glowBtn" onclick="scrollToProjects()">View Projects</button>
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects" class="projects">
-    <h2>GitHub Projects</h2>
-
-    <div class="project-card">
-      <h3>🚀 Portfolio Website</h3>
-      <p>Modern personal website using HTML, CSS, JS.</p>
-      <a href="#">View on GitHub →</a>
-    </div>
-
-    <div class="project-card">
-      <h3>📂 JavaScript Mini Projects</h3>
-      <p>Collection of beginner to advanced JS projects.</p>
-      <a href="#">View on GitHub →</a>
-    </div>
-
-    <div class="project-card">
-      <h3>⚙️ Backend Practice</h3>
-      <p>Node.js & API practice repository.</p>
-      <a href="#">View on GitHub →</a>
-    </div>
-
+  <section class="section dark" id="projects">
+    <h2>Projects</h2>
+    <p>My GitHub & Python projects will appear here.</p>
   </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 Anup Prasad | Built with ❤️ & GitHub</p>
-  </footer>
+  <!-- PROFILE -->
+  <section class="section" id="profile">
+    <h2>Profile</h2>
+    <p>GitHub profile link, skills, achievements.</p>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section dark" id="about">
+  <h2>About Me</h2>
+
+  <p>
+    I am a technology enthusiast with a strong interest in ethical hacking,
+    cybersecurity, and backend development. I enjoy understanding how systems
+    work internally and how vulnerabilities can be identified and secured.
+  </p>
+
+  <p>
+    My skill set includes basic to intermediate knowledge of ethical hacking,
+    networking fundamentals, Linux systems, and Python programming. I am
+    constantly improving my skills by practicing, experimenting, and learning
+    from real-world projects.
+  </p>
+
+  <p>
+    Currently, I am pursuing my education at
+    <strong>Pt. Jawaharlal Nehru Government College</strong>, where I am building
+    a strong academic foundation alongside my technical growth.
+  </p>
+  </section>
+
+  <section class="section" id="profile">
+  <h2>Profile</h2>
+
+  <p>
+    I actively work on projects and experiments that help me grow as a developer
+    and cybersecurity learner. My focus is on writing clean code, understanding
+    security concepts, and building practical tools.
+  </p>
+
+  <p>
+    You can explore my work, repositories, and ongoing projects on my GitHub
+    profile:
+  </p>
+
+  <p>
+    <a href="https://github.com/AloneHacker-008" target="_blank" style="color:red; display: inline-flex; align-items: center; gap: 5px;">
+      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="20" height="20">
+      github.com/YOUR_GITHUB_USERNAME
+    </a>
+  </p>
+      </section>
 
   <script src="script.js"></script>
 </body>
   </html>
-<button id="glowBtn" onclick="animateAndOpen()">
-  View Projects
-  </button>
-
-<!-- Background Video -->
-<video autoplay muted loop playsinline id="bgVideo">
-  <source src="210824_medium.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-<!-- Dark Overlay -->
-<div class="overlay"></div>
-
-<!-- HEADER -->
-<header class="header">
-  <div class="menu-icon" onclick="toggleMenu()">☰</div>
-
-  <nav class="nav-links">
-    <a href="#home">Home</a>
-    <a href="#projects">Projects</a>
-    <a href="#profile">Profile</a>
-    <a href="#about">About</a>
-  </nav>
-</header>
-
-<!-- MOBILE SLIDE MENU -->
-<div class="mobile-menu" id="mobileMenu">
-  <a href="#home" onclick="closeMenu()">Home</a>
-  <a href="#projects" onclick="closeMenu()">Projects</a>
-  <a href="#profile" onclick="closeMenu()">Profile</a>
-  <a href="#about" onclick="closeMenu()">About</a>
-</div>
-
-<!-- PAGE SECTIONS -->
-<section id="home" class="section">HOME SECTION</section>
-<section id="projects" class="section">PROJECTS SECTION</section>
-<section id="profile" class="section">PROFILE SECTION</section>
-<section id="about" class="section">ABOUT ME SECTION</section>
