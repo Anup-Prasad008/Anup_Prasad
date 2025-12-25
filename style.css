@@ -194,6 +194,13 @@ body {
   display: block;
 }
 
+h2 {
+  margin-bottom: 10px; /* h2 के नीचे कम जगह */
+}
+h3 {
+  margin-top: 5px; /* h3 के ऊपर कम जगह */
+}
+
 .project-background h3 {
   margin-bottom: 10px;
   color: #00f6ff;
