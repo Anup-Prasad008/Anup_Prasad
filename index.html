@@ -49,27 +49,23 @@
 <section id="projects" class="section">
   <h2>Projects</h2>
 
-  <div class="project-box" onclick="toggleProject()">
-    <h3>🐰 Bunny AI</h3>
-
-    <p class="project-short">
-      Bunny AI is a Python-based intelligent assistant.
-    </p>
+  <div class="project-box" onmouseover="showProjectOverlay()" onmouseout="hideProjectOverlay()">
+    <div class="project-background" id="projectBackground">
+      <h3>Bunny AI</h3>
+      <p class="project-short">
+        Bunny AI is a Python-based intelligent assistant designed for automation, command execution, and cybersecurity experiments. It leverages advanced logic to provide smart responses and enhance productivity through open-source innovation.
+      </p>
+      <span class="view-more" onclick="toggleProject(event)">View More</span>
+    </div>
 
     <div class="project-more" id="projectMore">
       <p>
-        Bunny AI is an advanced Python-powered AI assistant designed for
-        automation, command execution, smart responses, and cybersecurity-related
-        learning experiments. The project focuses on logic building, AI workflows,
-        and automation techniques.
+        Bunny AI is an intelligent AI-powered assistant designed to help users get quick, accurate, and user-friendly responses to their questions. The project focuses on simplicity, speed, and a clean interface while delivering smart conversational capabilities. Built with Python, it integrates advanced logic frameworks and automation protocols to enable seamless interactions. Bunny AI can understand user queries, provide meaningful answers, and assist with learning, problem-solving, and general information, making it a versatile tool for productivity and cybersecurity education. This open-source project emphasizes ethical development, scalability, and real-world applications in AI-driven workflows.
       </p>
-
       <div class="project-actions">
-        <button onclick="openProject(event)">Visit GitHub</button>
+        <button onclick="openProject(event)">Learn More</button>
       </div>
     </div>
-
-    <span class="view-more">View More</span>
   </div>
 </section>
 
@@ -90,10 +86,12 @@
 <section id="about" class="section">
   <h2>About Me</h2>
   <p>
-    I am <strong>Anup Prasad</strong>, currently studying at
-    <strong>Pt. Jawaharlal Nehru Government College</strong>.
-    I am deeply interested in ethical hacking, cybersecurity,
-    and building intelligent Python-based systems like Bunny AI.
+    I am <strong>Anup Prasad</strong>, a passionate learner in the field of
+      <strong>Ethical Hacking</strong> and <strong>Cybersecurity</strong>.
+      Currently pursuing my studies at
+      <strong>Pt. Jawaharlal Nehru Government College</strong>.
+      I enjoy building tools, exploring security concepts, and working on
+      Python-based automation and AI projects.
   </p>
 </section>
 
