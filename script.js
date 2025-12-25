@@ -1,14 +1,21 @@
 /* Menu */
 function toggleMenuAndScroll() {
   const menu = document.getElementById("slideMenu");
+  const navLinks = document.querySelector('.nav-links');
   menu.classList.toggle("open");
   if (menu.classList.contains("open")) {
+    navLinks.style.display = 'none';
     menu.scrollIntoView({ behavior: "smooth" });
+  } else {
+    navLinks.style.display = 'flex';
   }
 }
 
 function closeMenu() {
-  document.getElementById("slideMenu").classList.remove("open");
+  const menu = document.getElementById("slideMenu");
+  const navLinks = document.querySelector('.nav-links');
+  menu.classList.remove("open");
+  navLinks.style.display = 'flex';
 }
 
 /* Scroll buttons */
@@ -20,10 +27,26 @@ function goToContact() {
   document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
 }
 
-/* Project toggle */
-function toggleProject() {
+/* Project overlay and toggle */
+function showProjectOverlay() {
+  // Optional: Add any additional hover effects if needed
+}
+
+function hideProjectOverlay() {
+  // Optional: Add any additional hover effects if needed
+}
+
+function toggleProject(event) {
+  event.stopPropagation();
   const more = document.getElementById("projectMore");
-  more.style.display = more.style.display === "block" ? "none" : "block";
+  const background = document.getElementById("projectBackground");
+  if (more.style.display === "block") {
+    more.style.display = "none";
+    background.style.display = "block";
+  } else {
+    more.style.display = "block";
+    background.style.display = "none";
+  }
 }
 
 /* Prevent card toggle when clicking button */
