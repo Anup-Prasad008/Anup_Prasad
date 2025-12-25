@@ -4,10 +4,10 @@ function toggleMenuAndScroll() {
   const navLinks = document.querySelector('.nav-links');
   menu.classList.toggle("open");
   if (menu.classList.contains("open")) {
-    navLinks.style.display = 'none';
-    menu.scrollIntoView({ behavior: "smooth" });
+    navLinks.style.display = 'none'; // Hide nav-links when menu opens
+    // Removed scrollIntoView to prevent jumping
   } else {
-    navLinks.style.display = 'flex';
+    navLinks.style.display = 'flex'; // Show nav-links when menu closes
   }
 }
 
@@ -15,7 +15,7 @@ function closeMenu() {
   const menu = document.getElementById("slideMenu");
   const navLinks = document.querySelector('.nav-links');
   menu.classList.remove("open");
-  navLinks.style.display = 'flex';
+  navLinks.style.display = 'flex'; // Ensure nav-links are shown when closing
 }
 
 /* Scroll buttons */
@@ -40,12 +40,15 @@ function toggleProject(event) {
   event.stopPropagation();
   const more = document.getElementById("projectMore");
   const background = document.getElementById("projectBackground");
+  const viewMoreSpan = document.getElementById("viewMoreSpan");
   if (more.style.display === "block") {
     more.style.display = "none";
     background.style.display = "block";
+    viewMoreSpan.style.display = "block"; // Show View More when collapsed
   } else {
     more.style.display = "block";
     background.style.display = "none";
+    viewMoreSpan.style.display = "none"; // Hide View More when expanded
   }
 }
 
