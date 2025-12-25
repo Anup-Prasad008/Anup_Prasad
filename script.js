@@ -39,16 +39,27 @@ function hideProjectOverlay() {
 function toggleProject(event) {
   event.stopPropagation();
   const more = document.getElementById("projectMore");
-  const background = document.getElementById("projectBackground");
+  const short = document.getElementById("projectShort");
   const viewMoreSpan = document.getElementById("viewMoreSpan");
   if (more.style.display === "block") {
     more.style.display = "none";
-    background.style.display = "block";
-    viewMoreSpan.style.display = "block"; // Show View More when collapsed
+    short.style.display = "block";
+    viewMoreSpan.style.display = "block";
   } else {
     more.style.display = "block";
-    background.style.display = "none";
-    viewMoreSpan.style.display = "none"; // Hide View More when expanded
+    short.style.display = "none";
+    viewMoreSpan.style.display = "none";
+  }
+}
+
+function collapseProject() {
+  const more = document.getElementById("projectMore");
+  const short = document.getElementById("projectShort");
+  const viewMoreSpan = document.getElementById("viewMoreSpan");
+  if (more.style.display === "block") {
+    more.style.display = "none";
+    short.style.display = "block";
+    viewMoreSpan.style.display = "block";
   }
 }
 
