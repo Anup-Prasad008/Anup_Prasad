@@ -14,76 +14,93 @@
   </video>
   <div class="overlay"></div>
 
-  <!-- HEADER -->
+  <!-- Header -->
   <header class="header">
-    <div class="menu-icon" onclick="openMenu()">☰</div>
-
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
     <nav class="nav-links">
       <a href="#home">Home</a>
       <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
       <a href="#about">About</a>
-      <a href="#profile">Profile</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <!-- SLIDE MENU (normal flow, not fixed) -->
+  <!-- Slide Menu -->
   <div class="slide-menu" id="slideMenu">
     <a href="#home" onclick="closeMenu()">Home</a>
     <a href="#projects" onclick="closeMenu()">Projects</a>
+    <a href="#skills" onclick="closeMenu()">Skills</a>
     <a href="#about" onclick="closeMenu()">About</a>
-    <a href="#profile" onclick="closeMenu()">Profile</a>
+    <a href="#contact" onclick="closeMenu()">Contact</a>
   </div>
 
-  <!-- HOME -->
+  <!-- HERO -->
   <section id="home" class="section hero">
-    <h1>Anup <span>Prasad</span></h1>
-    <p>Ethical Hacking • Python • Cybersecurity</p>
-    <button onclick="scrollToSection('projects')">View Projects</button>
+    <h1 class="glitch" data-text="Anup Prasad">Anup Prasad</h1>
+
+    <p class="typewriter">
+      <span id="typing"></span>
+    </p>
+
+    <div class="cta-buttons">
+      <button onclick="goToProjects()">View Projects</button>
+      <button class="outline" onclick="goToContact()">Contact Me</button>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+      <span></span>
+    </div>
   </section>
 
   <!-- PROJECTS -->
   <section id="projects" class="section">
     <h2>Projects</h2>
-    <p>
-      This section will showcase my GitHub repositories, Python tools,
-      cybersecurity experiments, and learning-based projects.
-    </p>
+
+    <div class="project-card"
+      onclick="openProject('https://github.com/AloneHacker-008/Bunny-AI')">
+      <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png">
+      <div>
+        <h3>Bunny AI</h3>
+        <p>Python-based intelligent assistant.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section dark">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">🐍 Python</div>
+      <div class="skill">🛡️ Ethical Hacking</div>
+      <div class="skill">🐧 Linux</div>
+      <div class="skill">🔐 Cybersecurity</div>
+    </div>
   </section>
 
   <!-- ABOUT -->
-  <section id="about" class="section dark">
+  <section id="about" class="section">
     <h2>About Me</h2>
-
     <p>
-      I am a technology enthusiast with a strong interest in ethical hacking. 
-      I enjoy understanding how systems work internally.
-    </p>
-
-    <p>
-      My technical skills include ethical hacking fundamentals, networking basics,
-      Linux systems, and Python programming. I continuously practice and improve
-      my knowledge through hands-on experimentation and real-world learning.
-    </p>
-
-    <p>
-      Currently, I am pursuing my education at
-      <strong>Pt. Jawaharlal Nehru Government College</strong>, where I am building
-      a strong academic foundation along with my technical growth.
+      I am passionate about ethical hacking and cybersecurity.
+      Currently studying at <strong>Pt. Jawaharlal Nehru Government College</strong>.
+      I love learning, breaking, and securing systems.
     </p>
   </section>
 
-  <!-- PROFILE -->
-  <section id="profile" class="section">
-    <h2>Profile</h2>
+  <!-- CONTACT -->
+  <section id="contact" class="section dark">
+    <h2>Contact</h2>
 
-    <p>
-      You can explore my work, repositories, and ongoing projects on my GitHub
-      profile:
-    </p>
+    <a class="contact-link" href="https://github.com/AloneHacker-008" target="_blank">
+      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png">
+      AloneHacker-008
+    </a>
 
-    <a class="github-link" href="https://github.com/AloneHacker-008" target="_blank">
-      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub">
-      github.com/AloneHacker-008
+    <a class="contact-link" href="https://t.me/AloneHacker_008" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png">
+      @AloneHacker_008
     </a>
   </section>
 
