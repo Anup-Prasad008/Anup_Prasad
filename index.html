@@ -47,14 +47,12 @@
 
 <!-- PROJECTS -->
 <section id="projects" class="section">
-
-
-  <div class="project-box" onmouseover="showProjectOverlay()" onmouseout="hideProjectOverlay()">
+  <div class="project-box" onclick="collapseProject()">
     <div class="project-background" id="projectBackground">
       <h2>Projects</h2>
       
       <h3>Bunny AI</h3>
-      <p class="project-short">
+      <p class="project-short" id="projectShort">
         Bunny AI is a Python-based intelligent assistant designed for automation, command execution, and cybersecurity experiments. It leverages advanced logic to provide smart responses and enhance productivity through open-source innovation.
       </p>
       <span class="view-more" id="viewMoreSpan" onclick="toggleProject(event)">View More</span>
