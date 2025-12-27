@@ -430,22 +430,20 @@ body {
   gap: 20px; /* Space between fields */
 }
 
-/* 🔥 FIRST ROW: FIRST NAME and LAST NAME (side by side) */
-.contact_us_green .responsive-cell-block.wk-ipadp-6.wk-tab-12.wk-mobile-12.wk-desk-6:nth-child(1),
-.contact_us_green .responsive-cell-block.wk-desk-6.wk-ipadp-6.wk-tab-12.wk-mobile-12:nth-child(2) {
-  flex: 1 1 45%; /* Each takes ~45% width, side by side */
-  min-width: 200px; /* Minimum width to prevent too small */
+/* 🔥 FIRST ROW: FULL NAME (full width) */
+.contact_us_green .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-12.wk-ipadp-12:nth-child(1) {
+  flex: 1 1 100%; /* Full width */
 }
 
 /* 🔥 SECOND ROW: EMAIL and PHONE NUMBER (side by side) */
-.contact_us_green .responsive-cell-block.wk-desk-6.wk-ipadp-6.wk-tab-12.wk-mobile-12:nth-child(3),
-.contact_us_green .responsive-cell-block.wk-desk-6.wk-ipadp-6.wk-tab-12.wk-mobile-12:nth-child(4) {
+.contact_us_green .responsive-cell-block.wk-desk-6.wk-ipadp-6.wk-tab-12.wk-mobile-12:nth-child(2),
+.contact_us_green .responsive-cell-block.wk-desk-6.wk-ipadp-6.wk-tab-12.wk-mobile-12:nth-child(3) {
   flex: 1 1 45%; /* Each takes ~45% width, side by side */
   min-width: 200px;
 }
 
 /* 🔥 THIRD ROW: WHAT DO YOU HAVE IN MIND (full width) */
-.contact_us_green .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-12.wk-ipadp-12 {
+.contact_us_green .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-12.wk-ipadp-12:nth-child(4) {
   flex: 1 1 100%; /* Full width */
 }
 
