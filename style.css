@@ -318,7 +318,7 @@ body {
 
 .contact_us_green .responsive-container-block {
   min-height: 75px;
-  width: 100%;
+  width: 95%;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -337,7 +337,7 @@ body {
 }
 
 .contact_us_green .responsive-container-block.container {
-  max-width: 1320px;
+  max-width: 1200px;
   margin: 60px auto;
 }
 
@@ -354,7 +354,7 @@ body {
 }
 
 .contact_us_green .text-blk.contactus-subhead {
-  max-width: 385px;
+  max-width: 370px;
   color: #939393;
   font-size: 18px;
   margin-bottom: 50px;
@@ -378,14 +378,14 @@ body {
 .contact_us_green .responsive-cell-block.wk-ipadp-6.wk-tab-12.wk-mobile-12.wk-desk-6:nth-child(1),
 .contact_us_green .responsive-cell-block.wk-desk-6.wk-ipadp-6.wk-tab-12.wk-mobile-12:nth-child(2) {
   flex: 1 1 45%; /* Each takes ~45% width, side by side */
-  min-width: 200px; /* Minimum width to prevent too small */
+  min-width: 100px; /* Minimum width to prevent too small */
 }
 
 /* 🔥 SECOND ROW: EMAIL and PHONE NUMBER (side by side) */
 .contact_us_green .responsive-cell-block.wk-desk-6.wk-ipadp-6.wk-tab-12.wk-mobile-12:nth-child(3),
 .contact_us_green .responsive-cell-block.wk-desk-6.wk-ipadp-6.wk-tab-12.wk-mobile-12:nth-child(4) {
   flex: 1 1 45%; /* Each takes ~45% width, side by side */
-  min-width: 200px;
+  min-width: 100px;
 }
 
 /* 🔥 THIRD ROW: WHAT DO YOU HAVE IN MIND (full width) */
@@ -396,7 +396,7 @@ body {
 /* 🔥 INPUT FIELDS – FULL WIDTH INSIDE CELLS */
 .contact_us_green .input {
   height: 50px;
-  width: 100%; /* Increased to full width */
+  width: 95%; /* Increased to full width */
   border: 2.5px solid #a2a2a2;
   border-radius: 5px;
   font-size: 16px;
@@ -406,7 +406,7 @@ body {
 /* 🔥 TEXTAREA – FULL WIDTH */
 .contact_us_green .textinput {
   height: 200px;
-  width: 100%; /* Increased to full width */
+  width: 95%; /* Increased to full width */
   border: 2px solid #a2a2a2;
   border-radius: 5px;
   font-size: 16px;
@@ -440,7 +440,7 @@ body {
 
 /* DIVIDER LINE */
 .contact_us_green .line {
-  border-right: 1.8px solid #a2a2a2;
+  border-center: 1.8px solid #a2a2a2;
 }
 
 /* RIGHT SIDE CONTENT */
@@ -482,7 +482,7 @@ body {
 @media (max-width: 768px) {
   .contact_us_green .input,
   .contact_us_green .textinput {
-    width: 100%;
+    width: 95%;
   }
 
   .contact_us_green .responsive-container-block.big-container {
