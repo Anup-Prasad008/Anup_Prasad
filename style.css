@@ -700,3 +700,53 @@
       flex: 1 1 100%;
     }
   }
+/* ===== CONTACT INFO FIX ===== */
+
+.contact-details {
+  margin-top: 20px;
+}
+
+/* Phone, Email, Address */
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #e6f1ff;
+  font-size: 15px;
+  margin-bottom: 14px;
+}
+
+.contact-item i {
+  color: #00f6ff;
+  font-size: 18px;
+  min-width: 20px;
+}
+
+/* 🔥 SOCIAL ICONS – SEPARATE ROW */
+.contact-social {
+  margin-top: 20px;
+  display: flex;
+  gap: 18px;
+  justify-content: flex-start;
+}
+
+/* ICON STYLE */
+.contact-social img {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.contact-social img:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 8px #00f6ff);
+}
+
+/* MOBILE FRIENDLY */
+@media (max-width: 768px) {
+  .contact-social {
+    justify-content: center;
+  }
+}
+
