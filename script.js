@@ -94,7 +94,7 @@ function erase() {
 
 type();
 
-/* CONTACT FORM AJAX SUBMISSION */
+/* CONTACT FORM AJAX SUBMISSION FOR FORMSPREE */
 document.getElementById('contactForm').addEventListener('submit', function(e) {
   e.preventDefault(); // Prevent default form submission (no redirect)
 
@@ -109,7 +109,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
   // Prepare form data
   const formData = new FormData(form);
 
-  // Submit via AJAX
+  // Submit via AJAX to Formspree
   fetch(form.action, {
     method: 'POST',
     body: formData,
@@ -119,13 +119,11 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
   })
   .then(response => {
     if (response.ok) {
-      // Success: Reset form and show message
+      // Success: Reset form and show custom message
       form.reset();
       alert('Message sent successfully! Thank you for contacting me.');
       submitBtn.textContent = originalText;
       submitBtn.disabled = false;
     } else {
-      // Error handling
-      response.json().then(data => {
-        if (data.errors) {
-          alert('Error: ' + data.errors.map(error => error.message
+      // Error: Show error message
+      alert('Oops!
