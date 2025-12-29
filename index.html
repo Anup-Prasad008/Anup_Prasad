@@ -31,6 +31,7 @@
 <div class="slide-menu" id="slideMenu">
   <a href="#home" onclick="closeMenu()">Home</a>
   <a href="#projects" onclick="closeMenu()">Projects</a>
+  <a href="#books" onclick="closeMenu()">Books</a>
   <a href="#skills" onclick="closeMenu()">Skills</a>
   <a href="#about" onclick="closeMenu()">About</a>
   <a href="#contact" onclick="closeMenu()">Contact</a>
@@ -106,7 +107,34 @@
     </div>
   </div>
 </section>
-
+  
+<!-- NEW: MY BOOKS SECTION -->
+  <section id="books" class="section">
+    <h2 class="section-title">My Books</h2>
+    <div class="books-grid">
+      <!-- Sample Book 1: Replace with your real book details -->
+      <div class="book-box">
+        <img src="images/book1-cover.jpg" alt="Hidden Beauty" class="book-cover">
+        <div class="book-info">
+          <h3>Hidden Beauty</h3>
+          <p>Beauty is not always loud. Sometimes, it lives quietly in places no one looks. Hidden Beauty is a deeply emotional and introspective book </p>
+          <button onclick="openBook('https://www.amazon.com/dp/YOUR_BOOK_ID_1')">View More</button>
+        </div>
+      </div>
+      
+      <!-- Sample Book 2: Replace with your real book details -->
+      <div class="book-box">
+        <img src="images/book2-cover.jpg" alt="Book Title 2" class="book-cover">
+        <div class="book-info">
+          <h3>Book Title 2</h3>
+          <p>Another brief description here (2-3 lines). Focuses on Python development and AI tools for beginners.</p>
+          <button onclick="openBook('https://www.amazon.com/dp/YOUR_BOOK_ID_2')">View More</button>
+        </div>
+      </div>
+      
+      <!-- Add more books here by copying the <div class="book-box"> structure above -->
+    </div>
+  </section>
 <!-- SKILLS -->
 <section id="skills" class="section">
   <h2 class="section-title">Skills</h2>
