@@ -138,3 +138,8 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     submitBtn.disabled = false;
   });
 });
+
+/* OPEN BOOK LINK */
+function openBook(link) {
+  window.open(link, "_blank");
+}
