@@ -188,10 +188,18 @@
     80% { transform: translateX(2px); }
     100% { transform: translateX(0); }
   }
-  .typewriter {
-    margin-top: 10px;
-    color: #00f6ff;
-  }
+ /* Add this to your existing CSS */
+.typewriter-container {
+  min-height: 50px; /* Adjust based on your font size; make it tall enough for the longest text */
+  display: flex;
+  align-items: center; /* Keeps text vertically centered */
+}
+
+.typewriter {
+  font-family: 'Orbitron', monospace; /* Use monospace to prevent width changes */
+  white-space: nowrap; /* Prevents text wrapping */
+  overflow: hidden; /* Hides any overflow if needed */
+}
   .cta-buttons {
     margin-top: 30px;
   }
