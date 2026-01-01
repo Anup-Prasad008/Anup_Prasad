@@ -190,7 +190,7 @@
   }
  /* Container for the typewriter effect */
 .typewriter-container {
-  min-height: 50px; /* Adjust based on your font size; make it tall enough for the longest text */
+  min-height: 40px; /* Adjust based on your font size; make it tall enough for the longest text */
   display: flex;
   align-items: center; /* Vertical centering */
   justify-content: center; /* Horizontal centering within the container */
@@ -201,21 +201,10 @@
   /* padding: 20px; */
 }
 
-/* The typewriter text itself */
-.typewriter {
-  font-family: 'Orbitron', monospace; /* Use monospace to prevent width changes */
-  white-space: nowrap; /* Prevents text wrapping */
-  overflow: hidden; /* Hides any overflow if needed */
-  color: #00ff00; /* Add your desired color here (e.g., green for a retro look; change to white, red, etc.) */
-  font-size: 24px; /* Adjust size as needed */
-  border-right: 2px solid #00ff00; /* Blinking cursor effect (matches text color) */
-  animation: blink 1s infinite; /* Optional: Adds blinking to the cursor */
-}
-
 /* Optional: Keyframe for blinking cursor (if you want it) */
 @keyframes blink {
   0%, 50% { border-color: transparent; }
-  51%, 100% { border-color: #00ff00; } /* Matches text color */
+  51%, 100% { border-color: #00f6ff; } /* Matches text color */
 }
   .cta-buttons {
     margin-top: 30px;
