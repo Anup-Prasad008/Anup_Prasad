@@ -156,7 +156,7 @@
   }
   .glitch {
     font-family: "Orbitron", sans-serif;
-    font-size: 52px;
+  font-size: clamp(60px, 8vw, 100px);
     color: #00f6ff;
     position: relative;
     /* Removed animation from main text to keep "Anup Prasad" in one place */
